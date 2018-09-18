@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introdução ao VUE JS</title>
+	<script src="htpps://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="app">
+		
+		<joh-title v-bind:titulo="meuTitulo"></joh-title>
+		<!-- v-bind para manipulação da variavels de forma dinânica -->
+		<input type="text" v-model="meuTitulo">
+
+		<joh-table v-bind:titulo="['Titulo','Descricao', 'Link']" v-bind:registros="registros"></joh-table> <!-- lista da variavel registro -->
+
+		<p v-once>{{ meuTitulo }}</p> <!-- só renderiza uma vez-->
+
+		<p>{{html}}</p><!--nao interpreta o html-->
+		<p v-html="html"></p><!--interpreta o html-->
+
+	</div>
+
+	<script type="text/javascript">
+		//components with vue
+		//props é a personalização do componente
+		Vue.component('joh-title',{
+			props:['titulo'],
+			template:'<h2>{{ titulo }}</h2>'
+		});
+
+		Vue.component('joh-table',{
+			props:['titulos','registros'],
+			templatse:'<table>'+
+			'<thead>'+
+				'<tr>'+
+					'<th v-for="titulo in titulos"> {{titulo}} </th>'+
+				'</tr>'+
+			'</thead>'+
+			'<tbody>'+
+				'<tr v-for="registro in registros">'+
+					'<td v-for="item in registro">{{ item }}</td>'+
+				'</tr>'+
+			'</tbody>'+
+		'</table>'
+		});
+
+		var app = new Vue({
+			el:"#app",
+			data:{
+				meuTitulo:'Esse é o meu title',
+				registros:[
+					{titulo:'Titulo1', descricao:'descricao1', link:'link1'}, 
+					{titulo:'Titulo2', descricao:'descricao2', link:'link2'},
+					{titulo:'Titulo3', descricao:'descricao3', link:'link3'}
+				],
+				html:'<a href="#">Link</a>'
+			}
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introdução ao VUE JS</title>
+	<script src="htpps://unpkg.com/vue"></script>
+</head>
+<body>
+
+	<div id="app">
+		{{ msg }} <!--intepolação -> renderização variavéis-->
+
+		<p v-bind:title="title">Test title with vue</p>	
+		<!-- v-bind é uma diretiva p/ manipulação de atributos -->
+
+		<p v-if="condicao">Teste com IF</p> <!--condicao:false nao ira exibir-->
+
+		<p v-for="registro in registros">{{ registro.title }}</p>
+			
+		<button v-if="!clicou" v-on:click="usuarioClicou">Salvar</button>  <!-- v-on:click -> diretiva de eventos-->
+		<button v-if="clicou" v-on:click="usuarioClicou">Aguarde...</button>
+
+		<p><input type="text" v-model="usuario.nome"></p> <!-- v-model -> controle sobre a variavel-->
+
+		<p>Nome: {{usuario.nome}} </p>
+	</div>
+
+	<script type="text/javascript">
+		//el é um atributo!
+		//msg é uma variável
+		var app = new Vue({
+			el:"#app",
+			data:{
+				msg:'Iniciando com VueJS',
+				title:'Test with v-bind',
+				condicao: true,
+				registros:[
+					{title: 'registro1'},
+					{title: 'registro2'},
+					{title: 'registro3'},
+					{title: 'registro4'},
+					{title: 'registro5'}
+				],
+			clicou: false,
+			usuario:{nome:""}
+			},
+			methods:{
+				usuarioClicou: function(){
+					this.clicou = !this.clicou;
+				}
+			}
+		});
+		//no console no google vc pode alterar essa variavel
+		//app.msg = "new text";
+	</script>
+
+</body>
+</html>
