@@ -16,7 +16,8 @@ CSS, JS e HTML5
 - Input com v-model;
 - Componentes personalizados com Props dinâmicos;
 - Tabelas;
-- v-once e v-html;```
+- v-once e v-html;
+```
 
 ## Docs ##
 https://vuejs.org/v2/guide/
