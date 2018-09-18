@@ -1,4 +1,4 @@
-# VueJs
+# VueJs project
 Introdution the VueJs 2x 
 
 ## Requirements ##
@@ -12,9 +12,9 @@ CSS, JS e HTML5
 ## Steps ##
 ```- Diretiva v-bind;
 - if e for;
-- Itens din‚micos e mÈtodos;
+- Itens din√¢micos e m√©todos;
 - Input com v-model;
-- Componentes personalizados com Props din‚micos;
+- Componentes personalizados com Props din√¢micos;
 - Tabelas;
 - v-once e v-html;```
 
