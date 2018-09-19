@@ -17,6 +17,11 @@ CSS, JS e HTML5
 - Componentes personalizados com Props dinâmicos;
 - Tabelas;
 - v-once e v-html;
+
+- Filtro
+- Methods
+- watch
+- textarea, checkbox e radio
 ```
 
 ## Docs ##
