@@ -1,5 +1,5 @@
 # VueJs project
-Introdution the VueJs 2x 
+Introdution the VueJs 2x and project webpack-simple
 
 ## Requirements ##
 CSS, JS e HTML5
@@ -22,6 +22,7 @@ CSS, JS e HTML5
 - Methods
 - watch
 - textarea, checkbox e radio
+- formulários
 ```
 
 ## Docs ##

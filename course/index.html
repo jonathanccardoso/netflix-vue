@@ -49,6 +49,36 @@
 			<label for="feminino">Feminino</label>
 		</p>
 
+		<p>Select {{ ano }}</p>
+		<p>
+			<select v-model="ano">
+				<option disabled value="">Escolha o ano</option>
+				<option value="2017
+				">ano 2017</option>
+				<option value="2018
+				">ano 2018</option>
+				<option value="2019
+				">ano 2019</option>
+			</select>
+		</p>
+
+		<p>Multiple Selects {{ cores }}</p>
+		<p>
+			<select multiple v-model="cores">
+				<option disabled value="">Escolha o cores</option>
+				<option>azul</option>
+				<option>vermelho</option>
+				<option>amarelo</option>
+			</select>
+		</p>
+
+		<p>Lazy: {{busca}}</p>
+		<p><input type="text" v-model.lazy="busca"></p>
+
+		<p>Number: {{idade}} - tipo: {{typeof idade}} </p>
+		<!--convert to number-->
+		<p><input type="number" v-model.number="idade"></p>
+
 	</div>
 
 	<script type="text/javascript">
@@ -68,7 +98,11 @@
 				textarea:'',
 				termos:true,
 				notificacoes:[],
-				sexo:null
+				sexo:null,
+				ano:null,
+				cores:null,
+				busca:'',
+				idade:null
 			},
 			watch:{
 				nome:function(valor){
