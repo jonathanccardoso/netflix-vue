@@ -12,9 +12,7 @@
 
 <script>
 
-//somente test
-//import testJohnny from './components/test.vue';
-import Categoria from './components/Categoria.vue';
+import Categoria from '../components/Categoria.vue';
 
 export default {
   name: 'app',
@@ -31,7 +29,7 @@ export default {
     //console.log('Create');
     //instaled VueResource in project main.js
     // JsonServer run and VueResource instaled
-    this.$http.get('http://localhost:3000/categorias').then(res => {
+    this.$http.get('https://localhost:3000/categorias').then(res => {
       this.categorias = res.body;
     });
   },
@@ -42,9 +40,8 @@ export default {
     return {
       nomeProjeto: 'Netflix com Vue Js',
       intervalo:null,
-      //categorias:[]
       //categorias é via htpp => dbcategorias
-      categorias: [
+      categorias:[] /*[
         {
           "id":1,
           "titulo": "Terror",
@@ -57,7 +54,7 @@ export default {
             }
           ]
         }
-      ]
+      ]*/
     }
   }
 }

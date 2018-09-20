@@ -1,0 +1,19 @@
+{
+  "categorias": [
+    {
+      "id":1,
+      "titulo": "Terror",
+      "filmes":[
+        {
+          "id": 1, "titulo": "It: A coisa", "imagem":"https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"
+        },
+        {
+          "id": 2, "titulo": "It: A coisa", "imagem":"https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"
+        },
+        {
+          "id": 3, "titulo": "It: A coisa", "imagem":"https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700"
+        }
+      ]
+    }
+  ]
+}

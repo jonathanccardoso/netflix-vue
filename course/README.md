@@ -10,16 +10,16 @@ CSS, JS e HTML5
 - More flexible and lightweight
 
 ## Steps ##
-```- Diretiva v-bind;
+```- diretiva v-bind;
 - if e for;
-- Itens dinâmicos e métodos;
-- Input with v-model;
+- itens dinâmicos e métodos;
+- input with v-model;
 - Componentes personalizados com Props dinâmicos;
-- Table;
+- table;
 - v-once e v-html;
-- Filtro
-- Methods
+- filtro
+- methods
 - watch
 - textarea, checkbox e radio
 - forms
-```
+- routers```
