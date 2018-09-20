@@ -1,5 +1,5 @@
-# VueJs project
-Introdution the VueJs 2x and project webpack-simple
+# Netflix-Vue
+> A Vue.js project with webpack-simple
 
 ## Requirements ##
 CSS, JS e HTML5
@@ -9,21 +9,20 @@ CSS, JS e HTML5
 - Fast rendering
 - More flexible and lightweight
 
-## Steps ##
-```- Diretiva v-bind;
-- if e for;
-- Itens dinâmicos e métodos;
-- Input com v-model;
-- Componentes personalizados com Props dinâmicos;
-- Tabelas;
-- v-once e v-html;
+## Build Setup
 
-- Filtro
-- Methods
-- watch
-- textarea, checkbox e radio
-- formulários
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
 ```
 
 ## Docs ##
 https://vuejs.org/v2/guide/
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
